@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculatort</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <div id = "main">
+        <div>
+            <input id = "input" readonly>
+        </div>
+        <div>
+            <button id = "factorial" onclick = "factorial()">x!</button>
+            <button onclick = "appendToDisplay('(')">(</button>
+            <button onclick = "appendToDisplay(')')">)</button>
+            <button class = "basic-operation" onclick = "appendToDisplay(`%`)">%</button>
+            <button id = "reset" onclick = "clearDisplay()">CE</button>
+        </div>
+
+        <div>
+            <button class = "function" onclick = "naturalLog()">ln</button>
+            <button class = "digit" onclick = "appendToDisplay(`7`)">7</button>
+            <button class = "digit" onclick = "appendToDisplay(`8`)">8</button>
+            <button class = "digit" onclick = "appendToDisplay(`9`)">9</button>
+            <button class = "basic-operation" onclick = "appendToDisplay(`/`)">/</button>
+        </div>
+
+        <div>
+            <button class = "function" onclick = "logarithm()">log</button>
+            <button class = "digit" onclick = "appendToDisplay(`4`)">4</button>
+            <button class = "digit" onclick = "appendToDisplay(`5`)">5</button>
+            <button class = "digit" onclick = "appendToDisplay(`6`)">6</button>
+            <button class = "basic-operation" onclick = "appendToDisplay(`*`)">*</button>
+        </div>
+
+        <div>
+            <button class = "function" onclick = "squareRoot()">sqrt</button>
+            <button class = "digit" onclick = "appendToDisplay(`1`)">1</button>
+            <button class = "digit" onclick = "appendToDisplay(`2`)">2</button>
+            <button class = "digit" onclick = "appendToDisplay(`3`)">3</button>
+            <button class = "basic-operation" onclick = "appendToDisplay(`-`)">-</button>
+        </div>
+
+        <div>
+            <button class = "function" onclick = "power2()">pow</button>
+            <button class = "digit" onclick = "appendToDisplay(`0`)">0</button>
+            <button onclick = "appendToDisplay(`.`)">.</button>
+            <button onclick = "calculate()">=</button>
+            <button class = "basic-operation" onclick = "appendToDisplay(`+`)">+</button>
+        </div>
+
+    </div>
+    <script src = "index.js"></script>
+</body>
+</html>

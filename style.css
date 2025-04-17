@@ -1,0 +1,83 @@
+body {
+    font-family:verdana;
+    font-size:2em;
+}
+
+#main {
+    margin-left:10%;
+}
+
+div {
+    padding: 20px;
+    width: 350px;
+    height: 50px;
+}
+
+#input {
+    display: flex;
+    width: 270px;
+    margin-left:1px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    height: 50px;
+    font-size:40px;
+}
+
+div div {
+    background-color:bisque;
+    display: flex;
+    gap: 20px;
+
+}
+
+div div button {
+    width: 55px;
+    height: 50px;
+    border-radius: 10%;
+    background-color: black;
+    color:white;
+    font-size:20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+div div button:hover {
+    background-color:gray;
+}
+
+.digit {
+    background-color:lightblue;
+    color: black;
+}
+.digit:hover {
+    background-color:antiquewhite;
+}
+
+.function {
+    background-color:chocolate
+}
+.function:hover {
+    background-color:coral;
+}
+
+.basic-operation {
+    background-color:slateblue
+}
+.basic-operation:hover {
+    background-color: lightskyblue;
+}
+
+#factorial {
+    background-color: green;
+}
+#factorial:hover {
+    background-color: lightgreen;
+}
+
+#reset {
+    background-color: red;
+}
+#reset:hover {
+    background-color:lightcoral;
+}
